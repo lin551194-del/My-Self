@@ -1,0 +1,35 @@
+h1{
+  text-align: center;
+  color: blue;
+}
+p{
+  color: red;
+}
+img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+}
+.green-box {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.marquee p {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
